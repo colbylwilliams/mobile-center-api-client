@@ -59,7 +59,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -92,7 +92,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("id", id);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionById", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataById", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -223,7 +223,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> DeleteSubscriptionByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, bool? permanent = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, bool? permanent = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -257,7 +257,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("id", id);
                 tracingParameters.Add("permanent", permanent);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteSubscriptionById", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataById", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -399,7 +399,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -430,7 +430,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("take", take);
                 tracingParameters.Add("sort", sort);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionByTableName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameData", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -575,7 +575,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, ImportDataContainer import, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(string subscriptionId, string tableName, ImportDataContainer import, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -608,7 +608,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("import", import);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostSubscriptionByTableName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameData", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -740,7 +740,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> DeleteSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -768,7 +768,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteSubscriptionByTableName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameData", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -896,7 +896,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -929,7 +929,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("columnName", columnName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionByColumnName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1060,7 +1060,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PutSubscriptionByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1098,7 +1098,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("columnName", columnName);
                 tracingParameters.Add("column", column);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PutSubscriptionByColumnName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1233,7 +1233,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> DeleteSubscriptionByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1266,7 +1266,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("columnName", columnName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteSubscriptionByColumnName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1393,7 +1393,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionByTableName0WithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1421,7 +1421,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionByTableName0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumns", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1549,7 +1549,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostSubscriptionByTableName0WithHttpMessagesAsync(string subscriptionId, string tableName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsWithHttpMessagesAsync(string subscriptionId, string tableName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1582,7 +1582,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("column", column);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostSubscriptionByTableName0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumns", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1714,7 +1714,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionByTableName00WithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1742,7 +1742,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionByTableName00", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1870,7 +1870,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PutSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -1903,7 +1903,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("table", table);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PutSubscriptionByTableName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2035,7 +2035,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> DeleteSubscriptionByTableName0WithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2063,7 +2063,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("tableName", tableName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteSubscriptionByTableName0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2187,7 +2187,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionIdWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2210,7 +2210,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionBySubscriptionId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTables", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2335,7 +2335,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostSubscriptionBySubscriptionIdWithHttpMessagesAsync(string subscriptionId, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesWithHttpMessagesAsync(string subscriptionId, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2363,7 +2363,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("table", table);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostSubscriptionBySubscriptionId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTables", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2492,7 +2492,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId0WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesOperationsWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2515,7 +2515,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionBySubscriptionId0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesOperations", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2638,7 +2638,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostSubscriptionBySubscriptionId0WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2661,7 +2661,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostSubscriptionBySubscriptionId0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResources", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2784,7 +2784,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId00WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2807,7 +2807,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionBySubscriptionId00", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResources", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2930,7 +2930,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId000WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdPingWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -2953,7 +2953,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionBySubscriptionId000", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdPing", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -3076,7 +3076,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId0000WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -3099,7 +3099,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSubscriptionBySubscriptionId0000", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentity", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -3222,7 +3222,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostSubscriptionBySubscriptionId00WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (subscriptionId == null)
             {
@@ -3245,7 +3245,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("subscriptionId", subscriptionId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostSubscriptionBySubscriptionId00", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentity", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;

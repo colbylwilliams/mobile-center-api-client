@@ -56,7 +56,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetXcodeByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameXcodeVersionsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -74,7 +74,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetXcodeByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameXcodeVersions", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -197,7 +197,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetSourceBySourceHostWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSourceHostsBySourceHostRepositoriesWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -217,7 +217,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("sourceHost", sourceHost);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetSourceBySourceHost", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameSourceHostsBySourceHostRepositories", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -350,7 +350,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetRepoByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -368,7 +368,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetRepoByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameRepoConfig", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -494,7 +494,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostRepoByAppNameWithHttpMessagesAsync(RepoInfo repo, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(RepoInfo repo, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (repo == null)
             {
@@ -521,7 +521,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("repo", repo);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostRepoByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameRepoConfig", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -650,7 +650,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> DeleteRepoByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -668,7 +668,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteRepoByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameRepoConfig", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -794,7 +794,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<IList<Branch>>> GetShaByShaCollectionWithHttpMessagesAsync(string shaCollection, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IList<Branch>>> GetAppsByOwnerNameByAppNameCommitsBatchByShaCollectionWithHttpMessagesAsync(string shaCollection, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (shaCollection == null)
             {
@@ -817,7 +817,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("shaCollection", shaCollection);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetShaByShaCollection", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameCommitsBatchByShaCollection", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -932,7 +932,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse> GetBuildByBuildIdWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse> GetAppsByOwnerNameByAppNameBuildsByBuildIdLogsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.BuildId <= 0)
             {
@@ -954,7 +954,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetBuildByBuildId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameBuildsByBuildIdLogs", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1045,7 +1045,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse> GetDownloadByDownloadTypeWithHttpMessagesAsync(string downloadType, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse> GetAppsByOwnerNameByAppNameBuildsByBuildIdDownloadsByDownloadTypeWithHttpMessagesAsync(string downloadType, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.BuildId <= 0)
             {
@@ -1072,7 +1072,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("downloadType", downloadType);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetDownloadByDownloadType", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameBuildsByBuildIdDownloadsByDownloadType", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1161,7 +1161,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<Build>> GetBuildByBuildId0WithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<Build>> GetAppsByOwnerNameByAppNameBuildsByBuildIdWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.BuildId <= 0)
             {
@@ -1183,7 +1183,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetBuildByBuildId0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameBuildsByBuildId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1291,7 +1291,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<Build>> PatchBuildByBuildIdWithHttpMessagesAsync(BuildPatch properties, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<Build>> PatchAppsByOwnerNameByAppNameBuildsByBuildIdWithHttpMessagesAsync(BuildPatch properties, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.BuildId <= 0)
             {
@@ -1318,7 +1318,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("properties", properties);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PatchBuildByBuildId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PatchAppsByOwnerNameByAppNameBuildsByBuildId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1438,7 +1438,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<ToolsetProjects>> GetToolsetByBranchWithHttpMessagesAsync(string os, string platform, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<ToolsetProjects>> GetAppsByOwnerNameByAppNameBranchesByBranchToolsetProjectsWithHttpMessagesAsync(string os, string platform, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.Branch == null)
             {
@@ -1470,7 +1470,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("os", os);
                 tracingParameters.Add("platform", platform);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetToolsetByBranch", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameBranchesByBranchToolsetProjects", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1589,7 +1589,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.Branch == null)
             {
@@ -1611,7 +1611,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetAppByBranch", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameBranchesByBranchConfig", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1735,7 +1735,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PostAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PostAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.Branch == null)
             {
@@ -1757,7 +1757,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostAppByBranch", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameBranchesByBranchConfig", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1863,7 +1863,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PutAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PutAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.Branch == null)
             {
@@ -1885,7 +1885,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PutAppByBranch", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PutAppsByOwnerNameByAppNameBranchesByBranchConfig", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1991,7 +1991,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<SuccessResponse>> DeleteAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<SuccessResponse>> DeleteAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.Branch == null)
             {
@@ -2013,7 +2013,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppByBranch", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameBranchesByBranchConfig", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2119,7 +2119,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<IList<Build>>> GetAppByBranch0WithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IList<Build>>> GetAppsByOwnerNameByAppNameBranchesByBranchBuildsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.Branch == null)
             {
@@ -2141,7 +2141,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetAppByBranch0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameBranchesByBranchBuilds", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2250,7 +2250,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<IList<Build>>> PostAppByBranch0WithHttpMessagesAsync(bool? debug = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IList<Build>>> PostAppsByOwnerNameByAppNameBranchesByBranchBuildsWithHttpMessagesAsync(bool? debug = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.Branch == null)
             {
@@ -2273,7 +2273,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("debug", debug);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostAppByBranch0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameBranchesByBranchBuilds", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2388,7 +2388,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetAppByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameBranchesWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -2406,7 +2406,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetAppByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameBranches", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;

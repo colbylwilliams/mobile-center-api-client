@@ -26,9 +26,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='id'>
             /// </param>
-            public static object GetSubscriptionById(this IData operations, string subscriptionId, string tableName, string id)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataById(this IData operations, string subscriptionId, string tableName, string id)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionByIdAsync(subscriptionId, tableName, id), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdAsync(subscriptionId, tableName, id), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -43,9 +43,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionByIdAsync(this IData operations, string subscriptionId, string tableName, string id, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdAsync(this IData operations, string subscriptionId, string tableName, string id, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionByIdWithHttpMessagesAsync(subscriptionId, tableName, id, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdWithHttpMessagesAsync(subscriptionId, tableName, id, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -62,9 +62,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='permanent'>
             /// </param>
-            public static object DeleteSubscriptionById(this IData operations, string subscriptionId, string tableName, string id, bool? permanent = default(bool?))
+            public static object DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataById(this IData operations, string subscriptionId, string tableName, string id, bool? permanent = default(bool?))
             {
-                return Task.Factory.StartNew(s => ((IData)s).DeleteSubscriptionByIdAsync(subscriptionId, tableName, id, permanent), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdAsync(subscriptionId, tableName, id, permanent), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -81,9 +81,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> DeleteSubscriptionByIdAsync(this IData operations, string subscriptionId, string tableName, string id, bool? permanent = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdAsync(this IData operations, string subscriptionId, string tableName, string id, bool? permanent = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteSubscriptionByIdWithHttpMessagesAsync(subscriptionId, tableName, id, permanent, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdWithHttpMessagesAsync(subscriptionId, tableName, id, permanent, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -102,9 +102,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='sort'>
             /// </param>
-            public static object GetSubscriptionByTableName(this IData operations, string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string))
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameData(this IData operations, string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string))
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionByTableNameAsync(subscriptionId, tableName, skip, take, sort), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataAsync(subscriptionId, tableName, skip, take, sort), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -123,9 +123,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionByTableNameAsync(this IData operations, string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataAsync(this IData operations, string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionByTableNameWithHttpMessagesAsync(subscriptionId, tableName, skip, take, sort, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(subscriptionId, tableName, skip, take, sort, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -140,9 +140,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='import'>
             /// </param>
-            public static object PostSubscriptionByTableName(this IData operations, string subscriptionId, string tableName, ImportDataContainer import)
+            public static object PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameData(this IData operations, string subscriptionId, string tableName, ImportDataContainer import)
             {
-                return Task.Factory.StartNew(s => ((IData)s).PostSubscriptionByTableNameAsync(subscriptionId, tableName, import), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataAsync(subscriptionId, tableName, import), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -157,9 +157,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostSubscriptionByTableNameAsync(this IData operations, string subscriptionId, string tableName, ImportDataContainer import, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataAsync(this IData operations, string subscriptionId, string tableName, ImportDataContainer import, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostSubscriptionByTableNameWithHttpMessagesAsync(subscriptionId, tableName, import, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(subscriptionId, tableName, import, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -172,9 +172,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='tableName'>
             /// </param>
-            public static object DeleteSubscriptionByTableName(this IData operations, string subscriptionId, string tableName)
+            public static object DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameData(this IData operations, string subscriptionId, string tableName)
             {
-                return Task.Factory.StartNew(s => ((IData)s).DeleteSubscriptionByTableNameAsync(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataAsync(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -187,9 +187,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> DeleteSubscriptionByTableNameAsync(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataAsync(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteSubscriptionByTableNameWithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -204,9 +204,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='columnName'>
             /// </param>
-            public static object GetSubscriptionByColumnName(this IData operations, string subscriptionId, string tableName, string columnName)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnName(this IData operations, string subscriptionId, string tableName, string columnName)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionByColumnNameAsync(subscriptionId, tableName, columnName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameAsync(subscriptionId, tableName, columnName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -221,12 +221,28 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionByColumnNameAsync(this IData operations, string subscriptionId, string tableName, string columnName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameAsync(this IData operations, string subscriptionId, string tableName, string columnName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionByColumnNameWithHttpMessagesAsync(subscriptionId, tableName, columnName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(subscriptionId, tableName, columnName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
+            }
+
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='subscriptionId'>
+            /// </param>
+            /// <param name='tableName'>
+            /// </param>
+            /// <param name='columnName'>
+            /// </param>
+            /// <param name='column'>
+            /// </param>
+            public static object PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnName(this IData operations, string subscriptionId, string tableName, string columnName, TableColumn column)
+            {
+                return Task.Factory.StartNew(s => ((IData)s).PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameAsync(subscriptionId, tableName, columnName, column), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -240,28 +256,12 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='column'>
             /// </param>
-            public static object PutSubscriptionByColumnName(this IData operations, string subscriptionId, string tableName, string columnName, TableColumn column)
-            {
-                return Task.Factory.StartNew(s => ((IData)s).PutSubscriptionByColumnNameAsync(subscriptionId, tableName, columnName, column), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
-            }
-
-            /// <param name='operations'>
-            /// The operations group for this extension method.
-            /// </param>
-            /// <param name='subscriptionId'>
-            /// </param>
-            /// <param name='tableName'>
-            /// </param>
-            /// <param name='columnName'>
-            /// </param>
-            /// <param name='column'>
-            /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PutSubscriptionByColumnNameAsync(this IData operations, string subscriptionId, string tableName, string columnName, TableColumn column, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameAsync(this IData operations, string subscriptionId, string tableName, string columnName, TableColumn column, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PutSubscriptionByColumnNameWithHttpMessagesAsync(subscriptionId, tableName, columnName, column, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(subscriptionId, tableName, columnName, column, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -276,9 +276,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='columnName'>
             /// </param>
-            public static object DeleteSubscriptionByColumnName(this IData operations, string subscriptionId, string tableName, string columnName)
+            public static object DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnName(this IData operations, string subscriptionId, string tableName, string columnName)
             {
-                return Task.Factory.StartNew(s => ((IData)s).DeleteSubscriptionByColumnNameAsync(subscriptionId, tableName, columnName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameAsync(subscriptionId, tableName, columnName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -293,9 +293,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> DeleteSubscriptionByColumnNameAsync(this IData operations, string subscriptionId, string tableName, string columnName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameAsync(this IData operations, string subscriptionId, string tableName, string columnName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteSubscriptionByColumnNameWithHttpMessagesAsync(subscriptionId, tableName, columnName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(subscriptionId, tableName, columnName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -308,9 +308,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='tableName'>
             /// </param>
-            public static object GetSubscriptionByTableName0(this IData operations, string subscriptionId, string tableName)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumns(this IData operations, string subscriptionId, string tableName)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionByTableName0Async(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsAsync(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -323,9 +323,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionByTableName0Async(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsAsync(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionByTableName0WithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsWithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -340,9 +340,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='column'>
             /// </param>
-            public static object PostSubscriptionByTableName0(this IData operations, string subscriptionId, string tableName, TableColumn column)
+            public static object PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumns(this IData operations, string subscriptionId, string tableName, TableColumn column)
             {
-                return Task.Factory.StartNew(s => ((IData)s).PostSubscriptionByTableName0Async(subscriptionId, tableName, column), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsAsync(subscriptionId, tableName, column), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -357,9 +357,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostSubscriptionByTableName0Async(this IData operations, string subscriptionId, string tableName, TableColumn column, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsAsync(this IData operations, string subscriptionId, string tableName, TableColumn column, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostSubscriptionByTableName0WithHttpMessagesAsync(subscriptionId, tableName, column, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsWithHttpMessagesAsync(subscriptionId, tableName, column, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -372,9 +372,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='tableName'>
             /// </param>
-            public static object GetSubscriptionByTableName00(this IData operations, string subscriptionId, string tableName)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableName(this IData operations, string subscriptionId, string tableName)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionByTableName00Async(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameAsync(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -387,9 +387,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionByTableName00Async(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameAsync(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionByTableName00WithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -404,9 +404,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='table'>
             /// </param>
-            public static object PutSubscriptionByTableName(this IData operations, string subscriptionId, string tableName, Table table)
+            public static object PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableName(this IData operations, string subscriptionId, string tableName, Table table)
             {
-                return Task.Factory.StartNew(s => ((IData)s).PutSubscriptionByTableNameAsync(subscriptionId, tableName, table), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameAsync(subscriptionId, tableName, table), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -421,9 +421,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PutSubscriptionByTableNameAsync(this IData operations, string subscriptionId, string tableName, Table table, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameAsync(this IData operations, string subscriptionId, string tableName, Table table, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PutSubscriptionByTableNameWithHttpMessagesAsync(subscriptionId, tableName, table, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(subscriptionId, tableName, table, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -436,9 +436,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='tableName'>
             /// </param>
-            public static object DeleteSubscriptionByTableName0(this IData operations, string subscriptionId, string tableName)
+            public static object DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableName(this IData operations, string subscriptionId, string tableName)
             {
-                return Task.Factory.StartNew(s => ((IData)s).DeleteSubscriptionByTableName0Async(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameAsync(subscriptionId, tableName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -451,9 +451,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> DeleteSubscriptionByTableName0Async(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameAsync(this IData operations, string subscriptionId, string tableName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteSubscriptionByTableName0WithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(subscriptionId, tableName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -464,9 +464,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='subscriptionId'>
             /// </param>
-            public static object GetSubscriptionBySubscriptionId(this IData operations, string subscriptionId)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTables(this IData operations, string subscriptionId)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionBySubscriptionIdAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -477,9 +477,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionBySubscriptionIdAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionBySubscriptionIdWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -492,9 +492,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='table'>
             /// </param>
-            public static object PostSubscriptionBySubscriptionId(this IData operations, string subscriptionId, Table table)
+            public static object PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTables(this IData operations, string subscriptionId, Table table)
             {
-                return Task.Factory.StartNew(s => ((IData)s).PostSubscriptionBySubscriptionIdAsync(subscriptionId, table), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesAsync(subscriptionId, table), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -507,9 +507,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostSubscriptionBySubscriptionIdAsync(this IData operations, string subscriptionId, Table table, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesAsync(this IData operations, string subscriptionId, Table table, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostSubscriptionBySubscriptionIdWithHttpMessagesAsync(subscriptionId, table, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesWithHttpMessagesAsync(subscriptionId, table, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -520,9 +520,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='subscriptionId'>
             /// </param>
-            public static object GetSubscriptionBySubscriptionId0(this IData operations, string subscriptionId)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesOperations(this IData operations, string subscriptionId)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionBySubscriptionId0Async(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesOperationsAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -533,9 +533,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionBySubscriptionId0Async(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesOperationsAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionBySubscriptionId0WithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesOperationsWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -546,9 +546,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='subscriptionId'>
             /// </param>
-            public static object PostSubscriptionBySubscriptionId0(this IData operations, string subscriptionId)
+            public static object PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResources(this IData operations, string subscriptionId)
             {
-                return Task.Factory.StartNew(s => ((IData)s).PostSubscriptionBySubscriptionId0Async(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -559,9 +559,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostSubscriptionBySubscriptionId0Async(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostSubscriptionBySubscriptionId0WithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -572,9 +572,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='subscriptionId'>
             /// </param>
-            public static object GetSubscriptionBySubscriptionId00(this IData operations, string subscriptionId)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResources(this IData operations, string subscriptionId)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionBySubscriptionId00Async(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -585,9 +585,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionBySubscriptionId00Async(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionBySubscriptionId00WithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -598,9 +598,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='subscriptionId'>
             /// </param>
-            public static object GetSubscriptionBySubscriptionId000(this IData operations, string subscriptionId)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdPing(this IData operations, string subscriptionId)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionBySubscriptionId000Async(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdPingAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -611,9 +611,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionBySubscriptionId000Async(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdPingAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionBySubscriptionId000WithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdPingWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -624,9 +624,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='subscriptionId'>
             /// </param>
-            public static object GetSubscriptionBySubscriptionId0000(this IData operations, string subscriptionId)
+            public static object GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentity(this IData operations, string subscriptionId)
             {
-                return Task.Factory.StartNew(s => ((IData)s).GetSubscriptionBySubscriptionId0000Async(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -637,9 +637,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSubscriptionBySubscriptionId0000Async(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSubscriptionBySubscriptionId0000WithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -650,9 +650,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='subscriptionId'>
             /// </param>
-            public static object PostSubscriptionBySubscriptionId00(this IData operations, string subscriptionId)
+            public static object PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentity(this IData operations, string subscriptionId)
             {
-                return Task.Factory.StartNew(s => ((IData)s).PostSubscriptionBySubscriptionId00Async(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IData)s).PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityAsync(subscriptionId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <param name='operations'>
@@ -663,9 +663,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostSubscriptionBySubscriptionId00Async(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityAsync(this IData operations, string subscriptionId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostSubscriptionBySubscriptionId00WithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityWithHttpMessagesAsync(subscriptionId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }

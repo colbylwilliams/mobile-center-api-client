@@ -23,9 +23,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static object GetXcodeByAppName(this IBuildOperations operations)
+            public static object GetAppsByOwnerNameByAppNameXcodeVersions(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetXcodeByAppNameAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameXcodeVersionsAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -37,9 +37,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetXcodeByAppNameAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameXcodeVersionsAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetXcodeByAppNameWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameXcodeVersionsWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -51,9 +51,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static object GetSourceBySourceHost(this IBuildOperations operations)
+            public static object GetAppsByOwnerNameByAppNameSourceHostsBySourceHostRepositories(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetSourceBySourceHostAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameSourceHostsBySourceHostRepositoriesAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -65,9 +65,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetSourceBySourceHostAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameSourceHostsBySourceHostRepositoriesAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetSourceBySourceHostWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameSourceHostsBySourceHostRepositoriesWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -79,9 +79,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static object GetRepoByAppName(this IBuildOperations operations)
+            public static object GetAppsByOwnerNameByAppNameRepoConfig(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetRepoByAppNameAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameRepoConfigAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -93,9 +93,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetRepoByAppNameAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameRepoConfigAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetRepoByAppNameWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -110,9 +110,9 @@ namespace MobileCenterApi
             /// <param name='repo'>
             /// The repository information
             /// </param>
-            public static object PostRepoByAppName(this IBuildOperations operations, RepoInfo repo)
+            public static object PostAppsByOwnerNameByAppNameRepoConfig(this IBuildOperations operations, RepoInfo repo)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).PostRepoByAppNameAsync(repo), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).PostAppsByOwnerNameByAppNameRepoConfigAsync(repo), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -127,9 +127,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostRepoByAppNameAsync(this IBuildOperations operations, RepoInfo repo, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameRepoConfigAsync(this IBuildOperations operations, RepoInfo repo, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostRepoByAppNameWithHttpMessagesAsync(repo, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(repo, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -141,9 +141,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static object DeleteRepoByAppName(this IBuildOperations operations)
+            public static object DeleteAppsByOwnerNameByAppNameRepoConfig(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).DeleteRepoByAppNameAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).DeleteAppsByOwnerNameByAppNameRepoConfigAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -155,9 +155,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> DeleteRepoByAppNameAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> DeleteAppsByOwnerNameByAppNameRepoConfigAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteRepoByAppNameWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -172,9 +172,9 @@ namespace MobileCenterApi
             /// <param name='shaCollection'>
             /// A collection of commit SHAs comma-delimited
             /// </param>
-            public static IList<Branch> GetShaByShaCollection(this IBuildOperations operations, string shaCollection)
+            public static IList<Branch> GetAppsByOwnerNameByAppNameCommitsBatchByShaCollection(this IBuildOperations operations, string shaCollection)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetShaByShaCollectionAsync(shaCollection), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameCommitsBatchByShaCollectionAsync(shaCollection), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -189,9 +189,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<Branch>> GetShaByShaCollectionAsync(this IBuildOperations operations, string shaCollection, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IList<Branch>> GetAppsByOwnerNameByAppNameCommitsBatchByShaCollectionAsync(this IBuildOperations operations, string shaCollection, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetShaByShaCollectionWithHttpMessagesAsync(shaCollection, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameCommitsBatchByShaCollectionWithHttpMessagesAsync(shaCollection, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -203,9 +203,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static void GetBuildByBuildId(this IBuildOperations operations)
+            public static void GetAppsByOwnerNameByAppNameBuildsByBuildIdLogs(this IBuildOperations operations)
             {
-                Task.Factory.StartNew(s => ((IBuildOperations)s).GetBuildByBuildIdAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameBuildsByBuildIdLogsAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -217,9 +217,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task GetBuildByBuildIdAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task GetAppsByOwnerNameByAppNameBuildsByBuildIdLogsAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                await operations.GetBuildByBuildIdWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false);
+                await operations.GetAppsByOwnerNameByAppNameBuildsByBuildIdLogsWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false);
             }
 
             /// <summary>
@@ -231,9 +231,9 @@ namespace MobileCenterApi
             /// <param name='downloadType'>
             /// The download type. Possible values include: 'build', 'symbols', 'logs'
             /// </param>
-            public static void GetDownloadByDownloadType(this IBuildOperations operations, string downloadType)
+            public static void GetAppsByOwnerNameByAppNameBuildsByBuildIdDownloadsByDownloadType(this IBuildOperations operations, string downloadType)
             {
-                Task.Factory.StartNew(s => ((IBuildOperations)s).GetDownloadByDownloadTypeAsync(downloadType), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameBuildsByBuildIdDownloadsByDownloadTypeAsync(downloadType), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -248,9 +248,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task GetDownloadByDownloadTypeAsync(this IBuildOperations operations, string downloadType, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task GetAppsByOwnerNameByAppNameBuildsByBuildIdDownloadsByDownloadTypeAsync(this IBuildOperations operations, string downloadType, CancellationToken cancellationToken = default(CancellationToken))
             {
-                await operations.GetDownloadByDownloadTypeWithHttpMessagesAsync(downloadType, null, cancellationToken).ConfigureAwait(false);
+                await operations.GetAppsByOwnerNameByAppNameBuildsByBuildIdDownloadsByDownloadTypeWithHttpMessagesAsync(downloadType, null, cancellationToken).ConfigureAwait(false);
             }
 
             /// <summary>
@@ -259,9 +259,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static Build GetBuildByBuildId0(this IBuildOperations operations)
+            public static Build GetAppsByOwnerNameByAppNameBuildsByBuildId(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetBuildByBuildId0Async(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameBuildsByBuildIdAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -273,9 +273,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<Build> GetBuildByBuildId0Async(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<Build> GetAppsByOwnerNameByAppNameBuildsByBuildIdAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetBuildByBuildId0WithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameBuildsByBuildIdWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -289,9 +289,9 @@ namespace MobileCenterApi
             /// </param>
             /// <param name='properties'>
             /// </param>
-            public static Build PatchBuildByBuildId(this IBuildOperations operations, BuildPatch properties)
+            public static Build PatchAppsByOwnerNameByAppNameBuildsByBuildId(this IBuildOperations operations, BuildPatch properties)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).PatchBuildByBuildIdAsync(properties), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).PatchAppsByOwnerNameByAppNameBuildsByBuildIdAsync(properties), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -305,9 +305,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<Build> PatchBuildByBuildIdAsync(this IBuildOperations operations, BuildPatch properties, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<Build> PatchAppsByOwnerNameByAppNameBuildsByBuildIdAsync(this IBuildOperations operations, BuildPatch properties, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PatchBuildByBuildIdWithHttpMessagesAsync(properties, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PatchAppsByOwnerNameByAppNameBuildsByBuildIdWithHttpMessagesAsync(properties, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -327,9 +327,9 @@ namespace MobileCenterApi
             /// The desired platform for the project scan. Possible values include:
             /// 'Objective-C-Swift', 'React-Native', 'Xamarin', 'Java'
             /// </param>
-            public static ToolsetProjects GetToolsetByBranch(this IBuildOperations operations, string os, string platform)
+            public static ToolsetProjects GetAppsByOwnerNameByAppNameBranchesByBranchToolsetProjects(this IBuildOperations operations, string os, string platform)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetToolsetByBranchAsync(os, platform), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameBranchesByBranchToolsetProjectsAsync(os, platform), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -349,9 +349,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ToolsetProjects> GetToolsetByBranchAsync(this IBuildOperations operations, string os, string platform, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ToolsetProjects> GetAppsByOwnerNameByAppNameBranchesByBranchToolsetProjectsAsync(this IBuildOperations operations, string os, string platform, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetToolsetByBranchWithHttpMessagesAsync(os, platform, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameBranchesByBranchToolsetProjectsWithHttpMessagesAsync(os, platform, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -363,9 +363,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static object GetAppByBranch(this IBuildOperations operations)
+            public static object GetAppsByOwnerNameByAppNameBranchesByBranchConfig(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppByBranchAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -377,9 +377,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetAppByBranchAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetAppByBranchWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -391,9 +391,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static IDictionary<string, BranchProperties> PostAppByBranch(this IBuildOperations operations)
+            public static IDictionary<string, BranchProperties> PostAppsByOwnerNameByAppNameBranchesByBranchConfig(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).PostAppByBranchAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).PostAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -405,9 +405,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IDictionary<string, BranchProperties>> PostAppByBranchAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IDictionary<string, BranchProperties>> PostAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostAppByBranchWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -419,9 +419,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static IDictionary<string, BranchProperties> PutAppByBranch(this IBuildOperations operations)
+            public static IDictionary<string, BranchProperties> PutAppsByOwnerNameByAppNameBranchesByBranchConfig(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).PutAppByBranchAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).PutAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -433,9 +433,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IDictionary<string, BranchProperties>> PutAppByBranchAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IDictionary<string, BranchProperties>> PutAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PutAppByBranchWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PutAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -447,9 +447,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static SuccessResponse DeleteAppByBranch(this IBuildOperations operations)
+            public static SuccessResponse DeleteAppsByOwnerNameByAppNameBranchesByBranchConfig(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).DeleteAppByBranchAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).DeleteAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -461,9 +461,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<SuccessResponse> DeleteAppByBranchAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<SuccessResponse> DeleteAppsByOwnerNameByAppNameBranchesByBranchConfigAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteAppByBranchWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -475,9 +475,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static IList<Build> GetAppByBranch0(this IBuildOperations operations)
+            public static IList<Build> GetAppsByOwnerNameByAppNameBranchesByBranchBuilds(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppByBranch0Async(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameBranchesByBranchBuildsAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -489,9 +489,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<Build>> GetAppByBranch0Async(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IList<Build>> GetAppsByOwnerNameByAppNameBranchesByBranchBuildsAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetAppByBranch0WithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameBranchesByBranchBuildsWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -506,9 +506,9 @@ namespace MobileCenterApi
             /// <param name='debug'>
             /// Run build in debug mode
             /// </param>
-            public static IList<Build> PostAppByBranch0(this IBuildOperations operations, bool? debug = default(bool?))
+            public static IList<Build> PostAppsByOwnerNameByAppNameBranchesByBranchBuilds(this IBuildOperations operations, bool? debug = default(bool?))
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).PostAppByBranch0Async(debug), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).PostAppsByOwnerNameByAppNameBranchesByBranchBuildsAsync(debug), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -523,9 +523,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<Build>> PostAppByBranch0Async(this IBuildOperations operations, bool? debug = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IList<Build>> PostAppsByOwnerNameByAppNameBranchesByBranchBuildsAsync(this IBuildOperations operations, bool? debug = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostAppByBranch0WithHttpMessagesAsync(debug, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameBranchesByBranchBuildsWithHttpMessagesAsync(debug, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -537,9 +537,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static object GetAppByAppName(this IBuildOperations operations)
+            public static object GetAppsByOwnerNameByAppNameBranches(this IBuildOperations operations)
             {
-                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppByAppNameAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IBuildOperations)s).GetAppsByOwnerNameByAppNameBranchesAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -551,9 +551,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetAppByAppNameAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameBranchesAsync(this IBuildOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetAppByAppNameWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameBranchesWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }

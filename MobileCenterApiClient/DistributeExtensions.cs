@@ -69,9 +69,9 @@ namespace MobileCenterApi
             /// <param name='body'>
             /// The release information.
             /// </param>
-            public static object PatchReleaseByReleaseId(this IDistribute operations, double releaseId, ReleaseUpdateRequest body)
+            public static object PatchAppsByOwnerNameByAppNameReleasesByReleaseId(this IDistribute operations, double releaseId, ReleaseUpdateRequest body)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).PatchReleaseByReleaseIdAsync(releaseId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).PatchAppsByOwnerNameByAppNameReleasesByReleaseIdAsync(releaseId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -89,9 +89,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PatchReleaseByReleaseIdAsync(this IDistribute operations, double releaseId, ReleaseUpdateRequest body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PatchAppsByOwnerNameByAppNameReleasesByReleaseIdAsync(this IDistribute operations, double releaseId, ReleaseUpdateRequest body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PatchReleaseByReleaseIdWithHttpMessagesAsync(releaseId, body, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PatchAppsByOwnerNameByAppNameReleasesByReleaseIdWithHttpMessagesAsync(releaseId, body, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -106,9 +106,9 @@ namespace MobileCenterApi
             /// <param name='releaseId'>
             /// The ID of the release
             /// </param>
-            public static ErrorDetails DeleteReleaseByReleaseId(this IDistribute operations, string releaseId)
+            public static ErrorDetails DeleteAppsByOwnerNameByAppNameReleasesByReleaseId(this IDistribute operations, string releaseId)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).DeleteReleaseByReleaseIdAsync(releaseId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).DeleteAppsByOwnerNameByAppNameReleasesByReleaseIdAsync(releaseId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -123,9 +123,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ErrorDetails> DeleteReleaseByReleaseIdAsync(this IDistribute operations, string releaseId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ErrorDetails> DeleteAppsByOwnerNameByAppNameReleasesByReleaseIdAsync(this IDistribute operations, string releaseId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteReleaseByReleaseIdWithHttpMessagesAsync(releaseId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameReleasesByReleaseIdWithHttpMessagesAsync(releaseId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -147,9 +147,9 @@ namespace MobileCenterApi
             /// Currently only support the 'eq' comparision type. E.g. ?$filter=status eq
             /// 'Available'
             /// </param>
-            public static IList<ReleaseDetails> GetAppByAppName(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string))
+            public static IList<ReleaseDetails> GetAppsByOwnerNameByAppNameReleases(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string))
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).GetAppByAppNameAsync(publishedOnly, filter), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).GetAppsByOwnerNameByAppNameReleasesAsync(publishedOnly, filter), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -171,9 +171,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<ReleaseDetails>> GetAppByAppNameAsync(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IList<ReleaseDetails>> GetAppsByOwnerNameByAppNameReleasesAsync(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetAppByAppNameWithHttpMessagesAsync(publishedOnly, filter, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameReleasesWithHttpMessagesAsync(publishedOnly, filter, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -192,9 +192,9 @@ namespace MobileCenterApi
             /// <param name='body'>
             /// The release information
             /// </param>
-            public static ReleaseUploadEndResponse PatchUploadByUploadId(this IDistribute operations, string uploadId, ReleaseUploadEndRequest body)
+            public static ReleaseUploadEndResponse PatchAppsByOwnerNameByAppNameReleaseUploadsByUploadId(this IDistribute operations, string uploadId, ReleaseUploadEndRequest body)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).PatchUploadByUploadIdAsync(uploadId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).PatchAppsByOwnerNameByAppNameReleaseUploadsByUploadIdAsync(uploadId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -213,9 +213,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ReleaseUploadEndResponse> PatchUploadByUploadIdAsync(this IDistribute operations, string uploadId, ReleaseUploadEndRequest body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ReleaseUploadEndResponse> PatchAppsByOwnerNameByAppNameReleaseUploadsByUploadIdAsync(this IDistribute operations, string uploadId, ReleaseUploadEndRequest body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PatchUploadByUploadIdWithHttpMessagesAsync(uploadId, body, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PatchAppsByOwnerNameByAppNameReleaseUploadsByUploadIdWithHttpMessagesAsync(uploadId, body, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -227,9 +227,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static ReleaseUploadBeginResponse PostReleaseByAppName(this IDistribute operations)
+            public static ReleaseUploadBeginResponse PostAppsByOwnerNameByAppNameReleaseUploads(this IDistribute operations)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).PostReleaseByAppNameAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).PostAppsByOwnerNameByAppNameReleaseUploadsAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -241,9 +241,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ReleaseUploadBeginResponse> PostReleaseByAppNameAsync(this IDistribute operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ReleaseUploadBeginResponse> PostAppsByOwnerNameByAppNameReleaseUploadsAsync(this IDistribute operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostReleaseByAppNameWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameReleaseUploadsWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -361,9 +361,9 @@ namespace MobileCenterApi
             /// <param name='body'>
             /// The package information.
             /// </param>
-            public static object PatchPackageByPackageId(this IDistribute operations, double packageId, PackageUpdateRequest body)
+            public static object PatchAppsByOwnerNameByAppNamePackagesByPackageId(this IDistribute operations, double packageId, PackageUpdateRequest body)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).PatchPackageByPackageIdAsync(packageId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).PatchAppsByOwnerNameByAppNamePackagesByPackageIdAsync(packageId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -381,9 +381,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PatchPackageByPackageIdAsync(this IDistribute operations, double packageId, PackageUpdateRequest body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PatchAppsByOwnerNameByAppNamePackagesByPackageIdAsync(this IDistribute operations, double packageId, PackageUpdateRequest body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PatchPackageByPackageIdWithHttpMessagesAsync(packageId, body, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PatchAppsByOwnerNameByAppNamePackagesByPackageIdWithHttpMessagesAsync(packageId, body, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -398,9 +398,9 @@ namespace MobileCenterApi
             /// <param name='packageId'>
             /// The ID of the package
             /// </param>
-            public static ErrorDetails DeletePackageByPackageId(this IDistribute operations, string packageId)
+            public static ErrorDetails DeleteAppsByOwnerNameByAppNamePackagesByPackageId(this IDistribute operations, string packageId)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).DeletePackageByPackageIdAsync(packageId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).DeleteAppsByOwnerNameByAppNamePackagesByPackageIdAsync(packageId), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -415,9 +415,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ErrorDetails> DeletePackageByPackageIdAsync(this IDistribute operations, string packageId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ErrorDetails> DeleteAppsByOwnerNameByAppNamePackagesByPackageIdAsync(this IDistribute operations, string packageId, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeletePackageByPackageIdWithHttpMessagesAsync(packageId, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNamePackagesByPackageIdWithHttpMessagesAsync(packageId, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -439,9 +439,9 @@ namespace MobileCenterApi
             /// Currently only support the 'eq' comparision type. E.g. ?$filter=status eq
             /// 'Available'
             /// </param>
-            public static IList<PackageDetails> GetAppByAppName0(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string))
+            public static IList<PackageDetails> GetAppsByOwnerNameByAppNamePackages(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string))
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).GetAppByAppName0Async(publishedOnly, filter), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).GetAppsByOwnerNameByAppNamePackagesAsync(publishedOnly, filter), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -463,9 +463,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<PackageDetails>> GetAppByAppName0Async(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IList<PackageDetails>> GetAppsByOwnerNameByAppNamePackagesAsync(this IDistribute operations, bool? publishedOnly = default(bool?), string filter = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetAppByAppName0WithHttpMessagesAsync(publishedOnly, filter, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNamePackagesWithHttpMessagesAsync(publishedOnly, filter, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -484,9 +484,9 @@ namespace MobileCenterApi
             /// <param name='body'>
             /// The package information
             /// </param>
-            public static PackageUploadEndResponse PatchUploadByUploadId0(this IDistribute operations, string uploadId, PackageUploadEndRequest body)
+            public static PackageUploadEndResponse PatchAppsByOwnerNameByAppNamePackageUploadsByUploadId(this IDistribute operations, string uploadId, PackageUploadEndRequest body)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).PatchUploadByUploadId0Async(uploadId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).PatchAppsByOwnerNameByAppNamePackageUploadsByUploadIdAsync(uploadId, body), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -505,9 +505,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<PackageUploadEndResponse> PatchUploadByUploadId0Async(this IDistribute operations, string uploadId, PackageUploadEndRequest body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<PackageUploadEndResponse> PatchAppsByOwnerNameByAppNamePackageUploadsByUploadIdAsync(this IDistribute operations, string uploadId, PackageUploadEndRequest body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PatchUploadByUploadId0WithHttpMessagesAsync(uploadId, body, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PatchAppsByOwnerNameByAppNamePackageUploadsByUploadIdWithHttpMessagesAsync(uploadId, body, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -519,9 +519,9 @@ namespace MobileCenterApi
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static PackageUploadBeginResponse PostPackageByAppName(this IDistribute operations)
+            public static PackageUploadBeginResponse PostAppsByOwnerNameByAppNamePackageUploads(this IDistribute operations)
             {
-                return Task.Factory.StartNew(s => ((IDistribute)s).PostPackageByAppNameAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IDistribute)s).PostAppsByOwnerNameByAppNamePackageUploadsAsync(), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -533,9 +533,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<PackageUploadBeginResponse> PostPackageByAppNameAsync(this IDistribute operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<PackageUploadBeginResponse> PostAppsByOwnerNameByAppNamePackageUploadsAsync(this IDistribute operations, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostPackageByAppNameWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNamePackageUploadsWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }

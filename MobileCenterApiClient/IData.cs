@@ -29,7 +29,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -44,7 +44,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> DeleteSubscriptionByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, bool? permanent = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataByIdWithHttpMessagesAsync(string subscriptionId, string tableName, string id, bool? permanent = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -61,7 +61,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(string subscriptionId, string tableName, int? skip = default(int?), int? take = default(int?), string sort = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -74,7 +74,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, ImportDataContainer import, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(string subscriptionId, string tableName, ImportDataContainer import, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -85,7 +85,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> DeleteSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameDataWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -98,7 +98,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -113,7 +113,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PutSubscriptionByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -126,7 +126,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> DeleteSubscriptionByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsByColumnNameWithHttpMessagesAsync(string subscriptionId, string tableName, string columnName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -137,7 +137,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionByTableName0WithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -150,7 +150,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostSubscriptionByTableName0WithHttpMessagesAsync(string subscriptionId, string tableName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameColumnsWithHttpMessagesAsync(string subscriptionId, string tableName, TableColumn column, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -161,7 +161,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionByTableName00WithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -174,7 +174,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PutSubscriptionByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PutAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='tableName'>
@@ -185,7 +185,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> DeleteSubscriptionByTableName0WithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesByTableNameWithHttpMessagesAsync(string subscriptionId, string tableName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='customHeaders'>
@@ -194,7 +194,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionIdWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='table'>
@@ -205,7 +205,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostSubscriptionBySubscriptionIdWithHttpMessagesAsync(string subscriptionId, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdTablesWithHttpMessagesAsync(string subscriptionId, Table table, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='customHeaders'>
@@ -214,7 +214,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId0WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesOperationsWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='customHeaders'>
@@ -223,7 +223,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostSubscriptionBySubscriptionId0WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='customHeaders'>
@@ -232,7 +232,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId00WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdResourcesWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='customHeaders'>
@@ -241,7 +241,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId000WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdPingWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='customHeaders'>
@@ -250,7 +250,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSubscriptionBySubscriptionId0000WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <param name='subscriptionId'>
         /// </param>
         /// <param name='customHeaders'>
@@ -259,6 +259,6 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostSubscriptionBySubscriptionId00WithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameSubscriptionsBySubscriptionIdIdentityWithHttpMessagesAsync(string subscriptionId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
     }
 }

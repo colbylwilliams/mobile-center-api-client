@@ -233,7 +233,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PatchReleaseByReleaseIdWithHttpMessagesAsync(double releaseId, ReleaseUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PatchAppsByOwnerNameByAppNameReleasesByReleaseIdWithHttpMessagesAsync(double releaseId, ReleaseUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (body == null)
             {
@@ -257,7 +257,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("releaseId", releaseId);
                 tracingParameters.Add("body", body);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PatchReleaseByReleaseId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PatchAppsByOwnerNameByAppNameReleasesByReleaseId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -390,7 +390,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<ErrorDetails>> DeleteReleaseByReleaseIdWithHttpMessagesAsync(string releaseId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<ErrorDetails>> DeleteAppsByOwnerNameByAppNameReleasesByReleaseIdWithHttpMessagesAsync(string releaseId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (releaseId == null)
             {
@@ -413,7 +413,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("releaseId", releaseId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteReleaseByReleaseId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameReleasesByReleaseId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -547,7 +547,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<IList<ReleaseDetails>>> GetAppByAppNameWithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IList<ReleaseDetails>>> GetAppsByOwnerNameByAppNameReleasesWithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -567,7 +567,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("publishedOnly", publishedOnly);
                 tracingParameters.Add("filter", filter);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetAppByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameReleases", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -692,7 +692,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<ReleaseUploadEndResponse>> PatchUploadByUploadIdWithHttpMessagesAsync(string uploadId, ReleaseUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<ReleaseUploadEndResponse>> PatchAppsByOwnerNameByAppNameReleaseUploadsByUploadIdWithHttpMessagesAsync(string uploadId, ReleaseUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (uploadId == null)
             {
@@ -720,7 +720,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("uploadId", uploadId);
                 tracingParameters.Add("body", body);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PatchUploadByUploadId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PatchAppsByOwnerNameByAppNameReleaseUploadsByUploadId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -832,7 +832,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<ReleaseUploadBeginResponse>> PostReleaseByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<ReleaseUploadBeginResponse>> PostAppsByOwnerNameByAppNameReleaseUploadsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -850,7 +850,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostReleaseByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameReleaseUploads", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1380,7 +1380,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PatchPackageByPackageIdWithHttpMessagesAsync(double packageId, PackageUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PatchAppsByOwnerNameByAppNamePackagesByPackageIdWithHttpMessagesAsync(double packageId, PackageUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (body == null)
             {
@@ -1404,7 +1404,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("packageId", packageId);
                 tracingParameters.Add("body", body);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PatchPackageByPackageId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PatchAppsByOwnerNameByAppNamePackagesByPackageId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1537,7 +1537,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<ErrorDetails>> DeletePackageByPackageIdWithHttpMessagesAsync(string packageId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<ErrorDetails>> DeleteAppsByOwnerNameByAppNamePackagesByPackageIdWithHttpMessagesAsync(string packageId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (packageId == null)
             {
@@ -1560,7 +1560,7 @@ namespace MobileCenterApi
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("packageId", packageId);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeletePackageByPackageId", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNamePackagesByPackageId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1694,7 +1694,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<IList<PackageDetails>>> GetAppByAppName0WithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<IList<PackageDetails>>> GetAppsByOwnerNameByAppNamePackagesWithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -1714,7 +1714,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("publishedOnly", publishedOnly);
                 tracingParameters.Add("filter", filter);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetAppByAppName0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNamePackages", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1839,7 +1839,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<PackageUploadEndResponse>> PatchUploadByUploadId0WithHttpMessagesAsync(string uploadId, PackageUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<PackageUploadEndResponse>> PatchAppsByOwnerNameByAppNamePackageUploadsByUploadIdWithHttpMessagesAsync(string uploadId, PackageUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (uploadId == null)
             {
@@ -1867,7 +1867,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("uploadId", uploadId);
                 tracingParameters.Add("body", body);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PatchUploadByUploadId0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PatchAppsByOwnerNameByAppNamePackageUploadsByUploadId", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -1979,7 +1979,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<PackageUploadBeginResponse>> PostPackageByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<PackageUploadBeginResponse>> PostAppsByOwnerNameByAppNamePackageUploadsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (this.Client.OwnerName == null)
             {
@@ -1997,7 +1997,7 @@ namespace MobileCenterApi
                 _invocationId = ServiceClientTracing.NextInvocationId.ToString();
                 Dictionary<string, object> tracingParameters = new Dictionary<string, object>();
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostPackageByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNamePackageUploads", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;

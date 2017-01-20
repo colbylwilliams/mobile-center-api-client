@@ -48,7 +48,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PatchReleaseByReleaseIdWithHttpMessagesAsync(double releaseId, ReleaseUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PatchAppsByOwnerNameByAppNameReleasesByReleaseIdWithHttpMessagesAsync(double releaseId, ReleaseUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Deletes a release.
         /// </summary>
@@ -61,7 +61,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ErrorDetails>> DeleteReleaseByReleaseIdWithHttpMessagesAsync(string releaseId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ErrorDetails>> DeleteAppsByOwnerNameByAppNameReleasesByReleaseIdWithHttpMessagesAsync(string releaseId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Return detailed information about releases.
         /// </summary>
@@ -81,7 +81,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<IList<ReleaseDetails>>> GetAppByAppNameWithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<IList<ReleaseDetails>>> GetAppsByOwnerNameByAppNameReleasesWithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Commits or aborts the upload process for a release for the
         /// specified application
@@ -98,7 +98,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ReleaseUploadEndResponse>> PatchUploadByUploadIdWithHttpMessagesAsync(string uploadId, ReleaseUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ReleaseUploadEndResponse>> PatchAppsByOwnerNameByAppNameReleaseUploadsByUploadIdWithHttpMessagesAsync(string uploadId, ReleaseUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Begins the upload process for a new release for the specified
         /// application.
@@ -109,7 +109,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ReleaseUploadBeginResponse>> PostReleaseByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ReleaseUploadBeginResponse>> PostAppsByOwnerNameByAppNameReleaseUploadsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get the latest release from every distribution group associated
         /// with an application.
@@ -163,7 +163,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PatchPackageByPackageIdWithHttpMessagesAsync(double packageId, PackageUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PatchAppsByOwnerNameByAppNamePackagesByPackageIdWithHttpMessagesAsync(double packageId, PackageUpdateRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Deletes a package.
         /// </summary>
@@ -176,7 +176,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ErrorDetails>> DeletePackageByPackageIdWithHttpMessagesAsync(string packageId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ErrorDetails>> DeleteAppsByOwnerNameByAppNamePackagesByPackageIdWithHttpMessagesAsync(string packageId, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Return detailed information about packages.
         /// </summary>
@@ -196,7 +196,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<IList<PackageDetails>>> GetAppByAppName0WithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<IList<PackageDetails>>> GetAppsByOwnerNameByAppNamePackagesWithHttpMessagesAsync(bool? publishedOnly = default(bool?), string filter = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Commits or aborts the upload process for a package for the
         /// specified application
@@ -213,7 +213,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<PackageUploadEndResponse>> PatchUploadByUploadId0WithHttpMessagesAsync(string uploadId, PackageUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<PackageUploadEndResponse>> PatchAppsByOwnerNameByAppNamePackageUploadsByUploadIdWithHttpMessagesAsync(string uploadId, PackageUploadEndRequest body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Begins the upload process for a new package for the specified
         /// application
@@ -224,7 +224,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<PackageUploadBeginResponse>> PostPackageByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<PackageUploadBeginResponse>> PostAppsByOwnerNameByAppNamePackageUploadsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Return detailed information about a distributed release in a given
         /// distribution group.

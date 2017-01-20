@@ -206,7 +206,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Adds the members to the specified distribution group
         /// </summary>
@@ -228,7 +228,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Remove the users from the distribution group
         /// </summary>
@@ -250,7 +250,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> DeleteDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns a single distribution group for a given distribution group
         /// name
@@ -270,7 +270,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetDistributionByDistributionGroupName0WithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Updates the attributes of distribution group
         /// </summary>
@@ -292,7 +292,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PatchDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PatchAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Deletes a distribution group
         /// </summary>
@@ -311,7 +311,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ErrorResponse>> DeleteDistributionByDistributionGroupName0WithHttpMessagesAsync(string appName, string ownerName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ErrorResponse>> DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(string appName, string ownerName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns a list of distribution groups in the app specified
         /// </summary>
@@ -327,7 +327,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetDistributionByAppNameWithHttpMessagesAsync(string ownerName, string appName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameDistributionGroupsWithHttpMessagesAsync(string ownerName, string appName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Creates a new distribution group and returns it to the caller
         /// </summary>
@@ -346,7 +346,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostDistributionByAppNameWithHttpMessagesAsync(string ownerName, string appName, DistributionGroupRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameDistributionGroupsWithHttpMessagesAsync(string ownerName, string appName, DistributionGroupRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Return a specific app with the given app name which belongs to the
         /// given owner.

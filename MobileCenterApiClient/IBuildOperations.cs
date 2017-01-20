@@ -26,7 +26,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetXcodeByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameXcodeVersionsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Gets the repositories available from the source code host
         /// </summary>
@@ -36,7 +36,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetSourceBySourceHostWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameSourceHostsBySourceHostRepositoriesWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns the repository build configuration status of the app
         /// </summary>
@@ -46,7 +46,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetRepoByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Configures the repository for build
         /// </summary>
@@ -59,7 +59,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> PostRepoByAppNameWithHttpMessagesAsync(RepoInfo repo, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(RepoInfo repo, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Removes the configuration for the respository
         /// </summary>
@@ -69,7 +69,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> DeleteRepoByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameRepoConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns commit information for a batch of shas
         /// </summary>
@@ -82,7 +82,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<IList<Branch>>> GetShaByShaCollectionWithHttpMessagesAsync(string shaCollection, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<IList<Branch>>> GetAppsByOwnerNameByAppNameCommitsBatchByShaCollectionWithHttpMessagesAsync(string shaCollection, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Get the build log
         /// </summary>
@@ -92,7 +92,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse> GetBuildByBuildIdWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse> GetAppsByOwnerNameByAppNameBuildsByBuildIdLogsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Gets the download URI
         /// </summary>
@@ -106,7 +106,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse> GetDownloadByDownloadTypeWithHttpMessagesAsync(string downloadType, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse> GetAppsByOwnerNameByAppNameBuildsByBuildIdDownloadsByDownloadTypeWithHttpMessagesAsync(string downloadType, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns the build detail for the given build ID
         /// </summary>
@@ -116,7 +116,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<Build>> GetBuildByBuildId0WithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<Build>> GetAppsByOwnerNameByAppNameBuildsByBuildIdWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Updates the build properties
         /// </summary>
@@ -128,7 +128,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<Build>> PatchBuildByBuildIdWithHttpMessagesAsync(BuildPatch properties, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<Build>> PatchAppsByOwnerNameByAppNameBuildsByBuildIdWithHttpMessagesAsync(BuildPatch properties, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns the projects in the repository for the branch, for all
         /// toolsets
@@ -147,7 +147,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<ToolsetProjects>> GetToolsetByBranchWithHttpMessagesAsync(string os, string platform, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<ToolsetProjects>> GetAppsByOwnerNameByAppNameBranchesByBranchToolsetProjectsWithHttpMessagesAsync(string os, string platform, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Gets the branch configuration
         /// </summary>
@@ -157,7 +157,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Configures the branch for build
         /// </summary>
@@ -167,7 +167,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PostAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PostAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Reconfigures the branch for build
         /// </summary>
@@ -177,7 +177,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PutAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<IDictionary<string, BranchProperties>>> PutAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Deletes the branch build configuration
         /// </summary>
@@ -187,7 +187,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<SuccessResponse>> DeleteAppByBranchWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<SuccessResponse>> DeleteAppsByOwnerNameByAppNameBranchesByBranchConfigWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns the list of builds for the branch
         /// </summary>
@@ -197,7 +197,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<IList<Build>>> GetAppByBranch0WithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<IList<Build>>> GetAppsByOwnerNameByAppNameBranchesByBranchBuildsWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Create a build
         /// </summary>
@@ -210,7 +210,7 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<IList<Build>>> PostAppByBranch0WithHttpMessagesAsync(bool? debug = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<IList<Build>>> PostAppsByOwnerNameByAppNameBranchesByBranchBuildsWithHttpMessagesAsync(bool? debug = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Returns the list of Git branches for this application
         /// </summary>
@@ -220,6 +220,6 @@ namespace MobileCenterApi
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        Task<HttpOperationResponse<object>> GetAppByAppNameWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameBranchesWithHttpMessagesAsync(Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
     }
 }

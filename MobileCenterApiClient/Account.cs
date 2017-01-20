@@ -1895,7 +1895,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (ownerName == null)
             {
@@ -1921,7 +1921,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("distributionGroupName", distributionGroupName);
                 tracingParameters.Add("excludePendingInvitations", excludePendingInvitations);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetDistributionByDistributionGroupName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembers", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2066,7 +2066,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (ownerName == null)
             {
@@ -2096,7 +2096,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("distributionGroupName", distributionGroupName);
                 tracingParameters.Add("members", members);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostDistributionByDistributionGroupName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembers", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2256,7 +2256,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> DeleteDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (ownerName == null)
             {
@@ -2286,7 +2286,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("distributionGroupName", distributionGroupName);
                 tracingParameters.Add("members", members);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteDistributionByDistributionGroupName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembers", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2443,7 +2443,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetDistributionByDistributionGroupName0WithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (ownerName == null)
             {
@@ -2468,7 +2468,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("appName", appName);
                 tracingParameters.Add("distributionGroupName", distributionGroupName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetDistributionByDistributionGroupName0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2622,7 +2622,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PatchDistributionByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PatchAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (ownerName == null)
             {
@@ -2652,7 +2652,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("distributionGroupName", distributionGroupName);
                 tracingParameters.Add("distributionGroup", distributionGroup);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PatchDistributionByDistributionGroupName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PatchAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2809,7 +2809,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<ErrorResponse>> DeleteDistributionByDistributionGroupName0WithHttpMessagesAsync(string appName, string ownerName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<ErrorResponse>> DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(string appName, string ownerName, string distributionGroupName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (appName == null)
             {
@@ -2834,7 +2834,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("ownerName", ownerName);
                 tracingParameters.Add("distributionGroupName", distributionGroupName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "DeleteDistributionByDistributionGroupName0", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupName", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -2964,7 +2964,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> GetDistributionByAppNameWithHttpMessagesAsync(string ownerName, string appName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> GetAppsByOwnerNameByAppNameDistributionGroupsWithHttpMessagesAsync(string ownerName, string appName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (ownerName == null)
             {
@@ -2984,7 +2984,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("ownerName", ownerName);
                 tracingParameters.Add("appName", appName);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "GetDistributionByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "GetAppsByOwnerNameByAppNameDistributionGroups", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;
@@ -3116,7 +3116,7 @@ namespace MobileCenterApi
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<HttpOperationResponse<object>> PostDistributionByAppNameWithHttpMessagesAsync(string ownerName, string appName, DistributionGroupRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<HttpOperationResponse<object>> PostAppsByOwnerNameByAppNameDistributionGroupsWithHttpMessagesAsync(string ownerName, string appName, DistributionGroupRequest distributionGroup, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (ownerName == null)
             {
@@ -3145,7 +3145,7 @@ namespace MobileCenterApi
                 tracingParameters.Add("appName", appName);
                 tracingParameters.Add("distributionGroup", distributionGroup);
                 tracingParameters.Add("cancellationToken", cancellationToken);
-                ServiceClientTracing.Enter(_invocationId, this, "PostDistributionByAppName", tracingParameters);
+                ServiceClientTracing.Enter(_invocationId, this, "PostAppsByOwnerNameByAppNameDistributionGroups", tracingParameters);
             }
             // Construct URL
             var _baseUrl = this.Client.BaseUri.AbsoluteUri;

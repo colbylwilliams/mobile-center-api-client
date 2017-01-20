@@ -457,9 +457,9 @@ namespace MobileCenterApi
             /// <param name='excludePendingInvitations'>
             /// Whether to exclude pending invitations in the response
             /// </param>
-            public static object GetDistributionByDistributionGroupName(this IAccount operations, string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?))
+            public static object GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembers(this IAccount operations, string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?))
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).GetDistributionByDistributionGroupNameAsync(ownerName, appName, distributionGroupName, excludePendingInvitations), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersAsync(ownerName, appName, distributionGroupName, excludePendingInvitations), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -483,9 +483,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetDistributionByDistributionGroupNameAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, bool? excludePendingInvitations = default(bool?), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetDistributionByDistributionGroupNameWithHttpMessagesAsync(ownerName, appName, distributionGroupName, excludePendingInvitations, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(ownerName, appName, distributionGroupName, excludePendingInvitations, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -509,9 +509,9 @@ namespace MobileCenterApi
             /// <param name='members'>
             /// The list of members to add
             /// </param>
-            public static object PostDistributionByDistributionGroupName(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members)
+            public static object PostAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembers(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members)
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).PostDistributionByDistributionGroupNameAsync(ownerName, appName, distributionGroupName, members), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).PostAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersAsync(ownerName, appName, distributionGroupName, members), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -535,9 +535,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostDistributionByDistributionGroupNameAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostDistributionByDistributionGroupNameWithHttpMessagesAsync(ownerName, appName, distributionGroupName, members, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(ownerName, appName, distributionGroupName, members, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -561,9 +561,9 @@ namespace MobileCenterApi
             /// <param name='members'>
             /// The list of members to add
             /// </param>
-            public static object DeleteDistributionByDistributionGroupName(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members)
+            public static object DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembers(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members)
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).DeleteDistributionByDistributionGroupNameAsync(ownerName, appName, distributionGroupName, members), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersAsync(ownerName, appName, distributionGroupName, members), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -587,9 +587,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> DeleteDistributionByDistributionGroupNameAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupUserRequest members, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteDistributionByDistributionGroupNameWithHttpMessagesAsync(ownerName, appName, distributionGroupName, members, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameMembersWithHttpMessagesAsync(ownerName, appName, distributionGroupName, members, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -610,9 +610,9 @@ namespace MobileCenterApi
             /// <param name='distributionGroupName'>
             /// The name of the distribution group
             /// </param>
-            public static object GetDistributionByDistributionGroupName0(this IAccount operations, string ownerName, string appName, string distributionGroupName)
+            public static object GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupName(this IAccount operations, string ownerName, string appName, string distributionGroupName)
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).GetDistributionByDistributionGroupName0Async(ownerName, appName, distributionGroupName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameAsync(ownerName, appName, distributionGroupName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -633,9 +633,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetDistributionByDistributionGroupName0Async(this IAccount operations, string ownerName, string appName, string distributionGroupName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetDistributionByDistributionGroupName0WithHttpMessagesAsync(ownerName, appName, distributionGroupName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(ownerName, appName, distributionGroupName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -659,9 +659,9 @@ namespace MobileCenterApi
             /// <param name='distributionGroup'>
             /// The attributes to update for the distribution group
             /// </param>
-            public static object PatchDistributionByDistributionGroupName(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup)
+            public static object PatchAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupName(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup)
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).PatchDistributionByDistributionGroupNameAsync(ownerName, appName, distributionGroupName, distributionGroup), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).PatchAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameAsync(ownerName, appName, distributionGroupName, distributionGroup), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -685,9 +685,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PatchDistributionByDistributionGroupNameAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PatchAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameAsync(this IAccount operations, string ownerName, string appName, string distributionGroupName, DistributionGroupPatchRequest distributionGroup, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PatchDistributionByDistributionGroupNameWithHttpMessagesAsync(ownerName, appName, distributionGroupName, distributionGroup, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PatchAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(ownerName, appName, distributionGroupName, distributionGroup, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -708,9 +708,9 @@ namespace MobileCenterApi
             /// <param name='distributionGroupName'>
             /// The name of the distribution group
             /// </param>
-            public static ErrorResponse DeleteDistributionByDistributionGroupName0(this IAccount operations, string appName, string ownerName, string distributionGroupName)
+            public static ErrorResponse DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupName(this IAccount operations, string appName, string ownerName, string distributionGroupName)
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).DeleteDistributionByDistributionGroupName0Async(appName, ownerName, distributionGroupName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameAsync(appName, ownerName, distributionGroupName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -731,9 +731,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<ErrorResponse> DeleteDistributionByDistributionGroupName0Async(this IAccount operations, string appName, string ownerName, string distributionGroupName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<ErrorResponse> DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameAsync(this IAccount operations, string appName, string ownerName, string distributionGroupName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.DeleteDistributionByDistributionGroupName0WithHttpMessagesAsync(appName, ownerName, distributionGroupName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.DeleteAppsByOwnerNameByAppNameDistributionGroupsByDistributionGroupNameWithHttpMessagesAsync(appName, ownerName, distributionGroupName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -751,9 +751,9 @@ namespace MobileCenterApi
             /// <param name='appName'>
             /// The slug name of the app
             /// </param>
-            public static object GetDistributionByAppName(this IAccount operations, string ownerName, string appName)
+            public static object GetAppsByOwnerNameByAppNameDistributionGroups(this IAccount operations, string ownerName, string appName)
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).GetDistributionByAppNameAsync(ownerName, appName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).GetAppsByOwnerNameByAppNameDistributionGroupsAsync(ownerName, appName), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -771,9 +771,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> GetDistributionByAppNameAsync(this IAccount operations, string ownerName, string appName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> GetAppsByOwnerNameByAppNameDistributionGroupsAsync(this IAccount operations, string ownerName, string appName, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetDistributionByAppNameWithHttpMessagesAsync(ownerName, appName, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetAppsByOwnerNameByAppNameDistributionGroupsWithHttpMessagesAsync(ownerName, appName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -794,9 +794,9 @@ namespace MobileCenterApi
             /// <param name='distributionGroup'>
             /// The data for the distribution group
             /// </param>
-            public static object PostDistributionByAppName(this IAccount operations, string ownerName, string appName, DistributionGroupRequest distributionGroup)
+            public static object PostAppsByOwnerNameByAppNameDistributionGroups(this IAccount operations, string ownerName, string appName, DistributionGroupRequest distributionGroup)
             {
-                return Task.Factory.StartNew(s => ((IAccount)s).PostDistributionByAppNameAsync(ownerName, appName, distributionGroup), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
+                return Task.Factory.StartNew(s => ((IAccount)s).PostAppsByOwnerNameByAppNameDistributionGroupsAsync(ownerName, appName, distributionGroup), operations, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap().GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -817,9 +817,9 @@ namespace MobileCenterApi
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<object> PostDistributionByAppNameAsync(this IAccount operations, string ownerName, string appName, DistributionGroupRequest distributionGroup, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<object> PostAppsByOwnerNameByAppNameDistributionGroupsAsync(this IAccount operations, string ownerName, string appName, DistributionGroupRequest distributionGroup, CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.PostDistributionByAppNameWithHttpMessagesAsync(ownerName, appName, distributionGroup, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.PostAppsByOwnerNameByAppNameDistributionGroupsWithHttpMessagesAsync(ownerName, appName, distributionGroup, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
